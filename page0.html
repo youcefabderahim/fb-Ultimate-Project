@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            background-image: url(pics/wp2.jpg);
+            background-size: cover;
+            /* or contain */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+
+        .container {
+            border: solid transparent 2px;
+            padding-left: 25%;
+            padding-right: 25%;
+
+        }
+
+        .title {
+            margin-bottom: 50px;
+        }
+
+        img {
+            border-radius: 50%;
+            /*margin: 5%;*/
+            margin-left: 20%;
+
+
+        }
+
+        h1 {
+            font-size: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        h1 {
+            color: transparent;
+            -webkit-text-stroke: 3px darkmagenta;
+            position: relative;
+        }
+
+        h1::before {
+            content: "Welcome, Faten";
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            overflow: hidden;
+            color: darkmagenta;
+            border-right: 8px solid darkmagenta;
+            transition: 1S ease-in-out;
+        }
+
+        h1:hover::before {
+            width: 100%;
+            filter: drop-shadow(0 0 25px darkmagenta);
+        }
+
+
+        .link-container {
+            margin-top: 20px;
+        }
+
+        .link-container a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #3498db;
+            font-size: 18px;
+        }
+
+        .link-container a:hover {
+            color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="log">
+        <img src="pics/fb1.gif">
+    </div>
+    <br><br><br>
+    <div class="container">
+        <div class="title">
+            <h1>Welcome, Faten</h1>
+        </div>
+
+        <p>Click on the links below to navigate through the different pages:</p>
+        <div class="link-container">
+            <ul>
+                <li><a href="apology.html">Apology</a></li>
+                <li><a href="cards.html">My Love to fb</a></li>
+                <li><a href="final.html">Our Memories</a></li>
+                <li><a href="LoveFB.html">I love You</a></li>
+                <li><a href="thanks.html">Thank You fb</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
